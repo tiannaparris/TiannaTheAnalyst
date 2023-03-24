@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chocolate Store Sales Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Tianna Parris</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+
+						 <div class="dropup">
+							<button class="dropbtn">Portfolio Projects</button>
+							  <div class="dropup-content">
+									<a href="python.html">Python</a>
+									<a href="#">R</a>
+									<a href="sql.html">SQL</a>
+									<a href="excel.html">Excel</a>
+									<a href="https://public.tableau.com/app/profile/tianna.parris" target="_blank" class="link">Tableau</a>
+									<a href="#">Power BI</a>
+							</div>
+						 </div>							
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Project Details</h1>
+									</header>
+									<!--<span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
+									<h2>Goal</h2>
+									<p>Our goal is to identify the ideal customer for a bike shop. To accomplish this, we will analyze customer data from an Excel sheet containing information on Marital Status, Gender, Income, Children, Education, Occupation, Home Owner, Cars, Commute Distance, Region, Age, and Purchased Bike.</p>
+									<a href="https://github.com/tiannaparris/PortfolioProjects/blob/main/Excel%20Bike%20Sales%20Project%20Dataset.xlsx" target="_blank">Download from GitHub!</a>
+									<p></p>
+
+									<h2>Setup</h2>
+									<p>To start the project, data cleaning was performed to ensure accurate analysis. This included the removal of duplicate entries to avoid potential biases in the dataset. Furthermore, the data was updated to be more interpretable, such as replacing "m" and "f" with "male" and "female", and "m" and "s" with "married" and "single". Age groups were also created to facilitate better visualization of the data. Additionally, I ensured there was no missing data and that each field had the correct data type.</p>
+									<img src="images/excelbikework1.png" alt="Excel Worksheet after Data Cleaning" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 1. This image shows the dataset after it was cleaned.</i></p>
+									<p>These steps were essential to ensure that the data was properly formatted for analysis and would yield accurate results. We initally started with 1026 records and now we have 1000.</p>
+									
+									<h2>Analysis</h2>
+									<p>Now that we have clean data, we can perform exploratory data analysis to gain insights and patterns in the data.</p>
+									<h4>Business Questions:</h4>
+									<ol>
+										<li>What is the most common age group of customers who purchase bikes from the shop?</li>
+										<li>What is the most common gender of customers who purchase bikes from the shop?</li>
+										<li>What is the most common income range of customers who purchase bikes from the shop?</li>
+										<li>What is the most common education level of customers who purchase bikes from the shop?</li>
+										<li>What is the most common occupation of customers who purchase bikes from the shop?</li>
+										<li>What is the most common region of customers who purchase bikes from the shop?</li>
+										<li>What is the most common commute distance of customers who purchase bikes from the shop?</li>
+										<li>What is the most common number of cars owned by customers who purchase bikes from the shop?</li>
+										
+										<li>Does the marital status of customers have any correlation with the likelihood of purchasing a bike from the shop?</li>
+										<li>Does being a home owner have any correlation with the likelihood of purchasing a bike from the shop?</li>
+									</ol>
+
+									<p>By answering these questions, the bike shop can develop a better understanding of their ideal customer and tailor their marketing strategies to attract more of these customers.</p>
+									
+									<h2>Data Exploration</h2>
+									<p>We will start by segmenting the customers based on their age, gender, income, marital status, etc.</p>
+
+									<p> I used the customer data to create pivot tables that grouped the customers based on different criteria. Using these groups, I created charts that show key insights. Additionally, differnt functions were used to perform calculations.</p>
+									<img src="images/excelbikepivot.png" alt="Excel Analysis" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 2. This image shows the different pivot tables and charts.</i></p>
+
+									<p>To make it easy to view all this information at once, I created a dashboard that displays all the charts. I also added a slicer to the dashboard, which allows users to filter the data based on different criteria. This makes it easy to identify the customer segments that are most likely to purchase a bike.</p>
+									<img src="images/excelfinalbikedashboard.png" alt="Excel Sales Dashboard" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 3. This image shows the Bike Sales Dashboard.</i></p>
+
+									<h3>Key Findings</h3>
+
+									<p>Using the dashboard, we were able to determine the following insights:
+									</p>
+									<ul>
+										<li>Age group: The largest group of bike purchasers falls within the middle age range of 31-50.</li>
+										<li>Education level: The majority of customers who purchase bikes have completed partial high school education.</li>
+										<li>Occupation: The most prevalent occupation among bike purchasers is in management.</li>
+										<li>Region: North America is the region where most bike purchases are made.</li>
+										<li>Commute distance: Most bike purchasers have a commute distance of 0-1 mile.</li>
+										<li>Number of cars owned: The majority of bike purchasers own 0-1 cars.</li>
+										<li>Number of children: Most bike purchasers do not have children.</li>										
+										<li>Marital status: Married customers are more likely to purchase a bike, possibly due to their combined income being greater than that of a single income household.</li>
+										<li>Home ownership: There is no significant correlation between being a homeowner and the likelihood of purchasing a bike.</li>
+									  </ul>
+
+
+									<h3>Recommendations</h3>
+									<p>Based on these findings, the business can implement the following actionable steps to improve sales:</p>
+									<ul>
+										<li>Target marketing efforts towards the middle age range of 31-50, which is the largest group of bike purchasers. This can be done through targeted advertisements, promotions, and events.</li>
+										<li>Cater to the needs and interests of customers in management positions, who are the most prevalent occupation among bike purchasers. This can be done by offering high-end, performance-focused bikes and accessories.</li>
+										<li>Focus sales efforts on North America, which is the region where most bike purchases are made. This can involve increasing inventory and offering promotions specific to this region.</li>
+										<li>Cater to married customers by offering high-end, performance-focused bikes and accessories. Additionally, consider offering promotions for couples who purchase bikes together.</li>
+										<li>Offer affordable bike options for customers who own 2+ cars. The minority of bike purchasers own 2+ cars, this may due to the fact that they are financing the vehicles they own. This can involve offering financing or payment plans for high-end bikes.</li>
+									</ul>
+
+									<p>In conclusion, these findings provide valuable insights into the demographics and preferences of bike purchasers. By implementing these actionable steps, the business can improve sales and better cater to the needs and interests of its target market.</p>
+								</div>
+							</section>
+                        
+					</div>
+
+				<!-- Contact -->
+					<!--<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>-->
+						</div>
+					</section>
+
+				<!-- Footer -->
+				<section class="split">
+					<section>
+						<h4>Contact information</h4>															
+					</section>
+				</section>
+			</div>
+									<!-- Footer -->
+									<footer id="footer">
+										<div class="inner">
+											<ul class="icons">
+												<li><a href="mailto:parristianna@yahoo.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Twitter</span></a></li>
+												<li><a href="https://github.com/tiannaparris" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/tianna-parris-9b6823176/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+											<ul class="copyright">
+												<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+											</ul>
+										</div>
+									</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
